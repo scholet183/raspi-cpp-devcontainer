@@ -5,5 +5,6 @@ cmake_minimum_required (VERSION 3.20)
 
 project ("Hello")
 
+
 # Add source to this project's executable.
 add_executable (Hello "main.cpp" "main.h")
