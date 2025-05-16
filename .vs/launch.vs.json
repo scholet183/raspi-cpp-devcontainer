@@ -21,10 +21,22 @@
       "projectTarget": "Hello",
       "debuggerConfiguration": "gdbserver",
       "comment": "Deploy and debug on Pi, add to Connection Manager and specify remoteMachineName, set to Pi3 or Pi3 Debug configuration",
-      "remoteMachineName": "192.168.1.200",
+        "remoteMachineName": "10.0.0.69",
+        "gdbPath": "C:\\tmp\\gdb-multiarch.exe",
       "MIMode": "gdb",
-      "args": [],
-      "env": {}
+        "miDebuggerPath": "C:\\tmp\\gdb-multiarch.exe",
+        "setupCommands": [
+            {
+                "text": "set sysroot ."
+            },
+            {
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
     }
+        ],
+        "args": [],
+        "env": {}
+
+}
   ]
 }
